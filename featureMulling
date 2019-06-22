@@ -1,0 +1,23 @@
+voObservations : 
+
+1 ) og_others_6 - has approx 3500 non 0 values
+og_others_7 & og_others_8 - have just 138 non-0 values - might not contribute much in the model...
+
+2 ) loc_ic_t2t_mou_6,loc_ic_t2t_mou_7,loc_ic_t2t_mou_8,loc_ic_t2m_mou_6,loc_ic_t2m_mou_7,loc_ic_t2m_mou_8,loc_ic_t2f_mou_6	loc_ic_t2f_mou_7,loc_ic_t2f_mou_8 - can be dropped 
+only loc_ic_mou_6,loc_ic_mou_7,loc_ic_mou_8 can be used as it might not matter to where you're making the local call.
+
+3 ) Same as previous might hold for std_ic_*_mou_* and same might hold for [std|loc]_og_*_mou_*
+
+4) Or another thing that we can do is create what percetage of which type is made t2c, t2m , t2f etc
+
+5 ) Recharge column categories : number of times , total amount , max , last date 
+
+6 ) Data columns : count of times for 2g , count of times for 3g , max , average , volume of 2g , volume of 3g , revenue per user 2g , revenue per user 3g , night packer , monthyly and sachet for both 3g and 2g , fb user , age on network , volume based cost 
+
+7 ) [std|isd|loc]_[ic|og]_[t2c|t2m|t2t|blank]_mou_[6|7|8] - vaguely all types of mou columns
+
+8) [total|avg|date_of_last|last_day]_rech_[num|max|amt|blank]_[6|7|8] - vaguely all types of minutes recharge columns
+
+9) [avg|count|max|total|date_of_last]_rech_[data|2g|3g]_[6|7|8] - vaguely all types of data recharge columns
+
+10) [vol|arpu]_[2g|3g]_[6|7|8] 
